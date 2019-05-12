@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+
+<listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  
+  <parameter name="Browser" value="CH"></parameter>
+  <parameter environment="TestEnv" value="http://localhost/Avactis/"></parameter>
+
+  <test name="Test">
+    <classes>
+      <class name="tests.EndToEndTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
